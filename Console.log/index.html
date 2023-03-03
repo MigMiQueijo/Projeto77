@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console.log
+    </title>
+</head>
+<body>
+    <h1>Aula sobre Console.log</h1>
+    <p id="A">
+
+    </p>
+    <script>
+        var nome = "Miguel"
+        var sobrenome = "Yan"
+       // Método concat
+        var nome_completo = nome.concat(" ", sobrenome)  
+        console.log(nome)
+        console.log(nome_completo)
+        console.log(nome_completo.length)
+        var frase = "Eu jogo Roblox"
+        var novaFrase = frase.replace("jogo", "amo")
+        console.log(novaFrase)
+        novaFrase = novaFrase.toUpperCase()
+        console.log(novaFrase)
+        novaFrase = novaFrase.toLowerCase()
+        console.log(novaFrase)
+
+        var n1 = 7842
+        var raiz = Math.sqrt(n1)
+        raiz = Math.round(raiz)
+        console.log(raiz)
+        var n2 = 8.888888888888888888888
+        n2 = n2.toFixed(1)
+        console.log(n2)
+        var n3 = Math.pow(2,3)
+        console.log(n3)
+        var max = Math.max(3, 3, 4, 5, 6, 9, 5, 8, 1)
+        var min = Math.min(1, 1, 2, 3, 4, 7, 5, 6)
+        console.log(min, max)
+        var soma = min + max
+        console.log(soma)
+        min = min.toString()
+        max = max.toString()
+        soma = min + max
+        console.log(soma)
+
+    var nomes = ["Miguel", "Vitor"] 
+    document.getElementById("A").innerHTML=nomes;
+    nomes.push("Mariana", "Aaaaaaaaaa")
+    document.getElementById("A").innerHTML=nomes;
+    console.log(nomes)
+    console.log(nomes.length)
+    var seq = ""
+    var res = 0
+        for (var i =0; i<nomes.length; i++){
+            seq = seq+"<br>"+nomes[i]
+            console.log(seq)
+            document.getElementById("A").innerHTML=seq
+        }
+    </script>
+</body>
+</html>
